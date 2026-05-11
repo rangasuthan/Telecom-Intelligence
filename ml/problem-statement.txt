@@ -1,0 +1,13 @@
+We aim to predict telecom network congestion risk at a regional level using historical usage data.
+Congestion occurs when network usage exceeds capacity thresholds, leading to degraded service quality.
+
+This prediction is useful for telecom operators to proactively manage network load, optimize resource 
+allocation, and prevent service disruptions during peak hours.
+
+Since the dataset does not contain labeled congestion values, we generate labels using a rule-based 
+approach. Regions with total usage above the 90th percentile are labeled as HIGH risk, between 60–90 
+percentile as MEDIUM risk, and below 60 percentile as LOW risk.
+
+These labels enable supervised learning for classification, allowing the model to learn patterns in usage 
+behavior and predict future congestion risks effectively.
+``
